@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Travel Journal</title>
+   <link rel="stylesheet" href="style1.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <h1 class="title" style="font-family: Libre Baskerville; color:black; font-size:46px;">Travel Journal Timeline</h1>
+      <div class="timeline">
+        <div class="timeline-entry">
+            <h2 style="font-family: Merriweather; font-size:30px;" >Paris, France 
+            <span class="date" style="font-family: Merriweather; font-size:15px; " >23 May 2023</span>
+            </h2>
+
+          <div class="top-section">
+            <div class="left-section">
+              <img src="./Eiffel_Tower.jpg" alt="Eiffel Tower" class="img-content" />
+              <div class="highlights">
+                <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+                <ul>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Visited Eiffel Tower</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Lunch at Cafe de Flore</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Evening cruise on the Seine</li>
+                </ul>
+              </div>
+              <div class="gallery">
+                <img src="./cafe.jpg" style="height: 200px; width:150px;" alt="Café" />
+                <img src="./boat_ride.jpg"  style="height: 200px; width:150px;" alt="Boat Ride" />
+              </div>
+            </div>
+            <div class="right-section">
+                <div class="map-container">
+                   <h3 class="map-title" style="font-family: Merriweather; font-size:25px; color:black">📍 Location Visited</h3>
+                   <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.008116929283!2d2.2919067!3d48.8588446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fda7d0b9935%3A0x56fb6e3e9d7b3f21!2sEiffel%20Tower!5e0!3m2!1sen!2sin!4v1685897081992!5m2!1sen!2sin"
+                          allowfullscreen=""
+                          loading="lazy"
+                          title="Map of Eiffel Tower"
+                   ></iframe>
+                 </div>
+                  <div class="quote">
+                      <h4 style="font-size: 22px; color: black;">"We’ll always have Paris."</h4>
+                  </div>
+                  <div class="caption-box">
+                       <label for="parisCaption"><strong>📝Caption:</strong></label>
+                      <div id="parisCaption" contenteditable="true" class="editable-caption">
+                          Memories made here stay forever...
+                      </div>
+                  </div>
+                  <script>
+                    const caption1 = document.getElementById("parisCaption");
+                    const saved1 = localStorage.getItem("parisCaption");
+                    if (saved1) caption1.innerText = saved1;
+                     caption1.addEventListener("input", () =>
+                     {
+                       localStorage.setItem("parisCaption", caption1.innerText);
+                     });
+                  </script>
+              </div>
+          </div>
+          <div class="fun-fact">
+            <strong>Did you know?</strong>
+            <p>The Eiffel Tower was meant to be temporary but it stayed because it helped with radio communication!</p>
+          </div>
+        </div>
+      <div class="timeline-entry">
+          <h2 style="font-family: Merriweather; font-size:30px;">Rome, Italy 
+              <span class="date" style="font-family: Merriweather; font-size:15px; ">24 May 2023</span></h2>
+
+          <div class="top-section">
+            <div class="left-section">
+             <img src="./fountain.webp" alt="Trevi Fountain" class="img-content"  />
+               <div class="highlights">
+                   <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+                  <ul>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Made a wish at the Trevi Fountain</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Explored quaint Roman streets</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Had gelato near Piazza Navona</li> 
+                  </ul>
+               </div>
+               <div class="gallery">
+                  <img src="./gelato.jpg" style="height: 250px; width:150px;" alt="Gelato" />
+                  <img src="./piazza_novana.cms" style="height: 250px; width:150px;" alt="Piazza Navona" />       
+               </div>
+            </div>
+            <div class="right-section">
+                   <div class="map-container">
+                   <h3 class="map-title" style="font-family: Merriweather; font-size:25px; color:black; position: relative; left:15px;">📍 Location Visited</h3>
+                   <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.269038252603!2d12.482328115426684!3d41.90093257922116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6051e1b1fdb9%3A0x441a9ef2c28b6d7b!2sTrevi%20Fountain!5e0!3m2!1sen!2sin!4v1685967892014!5m2!1sen!2sin"
+                      allowfullscreen=""
+                      loading="lazy"
+                      title="Map of Trevi Fountain"
+                      style="height:550px;  width:450px; position:relative; left:20px;"
+                  ></iframe>
+                  </div>
+                  <div class="quote">
+                    <h4 style="font-size: 22px; color: black;  position:relative; left:20px;">"Toss a coin and return to Rome."</h4>
+                  </div>
+                  <div class="caption-box" style=" margin-bottom: 20px;  position:relative; left:20px; width:420px;">
+                     <label for="romeCaption"><strong>📝 Caption:</strong></label>
+                     <div id="romeCaption" contenteditable="true" class="editable-caption">
+                         A timeless city blending past and present...
+                    </div>
+                  </div>
+                  <script>
+                    const caption2 = document.getElementById("RomeCaption");
+                    const saved2 = localStorage.getItem("RomeCaption");
+                    if (saved2) caption2.innerText = saved2;
+                     caption2.addEventListener("input", () =>
+                     {
+                         localStorage.setItem("Caption", caption2.innerText);
+                     });
+                  </script>
+             </div>
+        </div>
+        <div class="fun-fact">
+         <strong>Did you know?</strong>
+         <p>Over €3,000 is tossed into the Trevi Fountain every day and it's used to help the needy!</p>
+        </div>
+     </div>
+  <div class="timeline-entry">
+    <h2 style="font-family: Merriweather; font-size:30px;">Venice, Italy 
+      <span class="date" style="font-family: Merriweather; font-size:15px; ">25 May 2023</span></h2>
+    <div class="top-section">
+      <div class="left-section">
+        <img src="./canal.jpg" alt="Venice Canal" class="img-content" />
+        <div class="highlights">
+          <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+          <ul>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Gondola ride through canals</li>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Lunch at Osteria alle Testiere</li>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Visited St. Mark’s Basilica</li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <img src="./gondola.jpg" style="height: 250px; width:150px;" alt="Gondola" />
+          <img src="./bascilicia.avif"  style="height: 250px; width:150px;" alt="St. Mark’s Basilica" />
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="map-container">
+          <h3 class="map-title" style="position: relative; left:15px; font-family: Merriweather; font-size:25px; color:black;">📍 Location Visited</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.799409182746!2d12.3309373!3d45.434345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1f6d1e11b4f%3A0xa47c7f3e44d9c0c1!2sVenice!5e0!3m2!1sen!2sin!4v1685899000000!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            title="Map of Venice"
+             style="height:450px; width:450px; position:relative; left:20px;"
+          ></iframe>
+        </div>
+        <div class="quote">
+          <h4 style="font-size: 22px; color: black; position:relative; left:20px;">“Venice tastes like sweet, salty dreams.”</h4>
+       
+        </div>
+        <div class="caption-box" style=" margin-bottom: 20px; position:relative; left:20px; width:415px; ">
+               <label for="veniceCaption"><strong>📝 Caption:</strong></label>
+               <div id="veniceCaption" contenteditable="true" class="editable-caption">
+                    Where water whispers history at every turn...
+               </div>
+         </div>
+         <script>
+             const caption3 = document.getElementById("VenCaption");
+             const saved3 = localStorage.getItem("VenCaption");
+              if (saved3) caption3.innerText = saved;
+              caption3.addEventListener("input", () =>
+              {
+                    localStorage.setItem("Caption", caption3.innerText);
+              });
+        </script>
+        </div>
+      </div>
+      <div class="fun-fact">
+        <strong>Did you know?</strong>
+        <p>Venice has over 400 bridges connecting its canals and islands!</p>
+      </div>
+    </div>
+  </div>
+</div
+</body>
+</html>

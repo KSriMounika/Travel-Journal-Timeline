@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Travel Journal</title>
+   <link rel="stylesheet" href="style1.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <h1 class="title" style="font-family: Libre Baskerville; color:black; font-size:46px;">Travel Journal Timeline</h1>
+      <div class="timeline">
+        <div class="timeline-entry">
+            <h2 style="font-family: Merriweather; font-size:30px;" >Baga,Goa
+            <span class="date" style="font-family: Merriweather; font-size:15px; " >15 March 2021</span>
+            </h2>
+
+          <div class="top-section">
+            <div class="left-section">
+              <img src="./beach.jpeg" alt="Baga Beach" class="img-content" />
+              <div class="highlights">
+                <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+                <ul>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Visited Baga Beach</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Breakfast at Mambo Cafe</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Shopping at baga night market</li>
+                </ul>
+              </div>
+              <div class="gallery">
+                <img src="./mambo.jpeg" style="height: 200px; width:150px;" alt="Mambo" />
+                <img src="./market.jpeg"  style="height: 200px; width:150px;" alt="Night market" />
+              </div>
+            </div>
+            <div class="right-section">
+                <div class="map-container">
+                   <h3 class="map-title" style="font-family: Merriweather; position:relative; left:10px; font-size:25px; color:black">📍 Location Visited</h3>
+                   <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.838731859947!2d73.7411!3d15.5529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfddf5e6b6f6a1%3A0x1b2c1e0a8d8e2c3a!2sBaga%20Beach!5e0!3m2!1sen!2sin!4v1685897081992!5m2!1sen!2sin"
+                          allowfullscreen=""
+                          loading="lazy"
+                          title="Map of Baga Beach"
+                          style="position: relative; left:20px; height:400px; width:450px;"
+                   ></iframe>
+                 </div>
+                  <div class="quote">
+                      <h4 style="font-size: 22px; color: black; position:relative; left:20px; top:-5px;">“I left a piece of my soul in Baga.”</h4>
+                  </div>
+                  <div class="caption-box" style="position: relative; left:20px; top:-15px; width:410px;">
+                       <label for="parisCaption"><strong>📝Caption:</strong></label>
+                      <div id="parisCaption" contenteditable="true" class="editable-caption">
+                          The rhythm of the waves, laughter under starlit skies, and sand between my toes forever etched in my heart.
+                      </div>
+                  </div>
+                  <script>
+                    const caption1 = document.getElementById("bagaCaption");
+                    const saved1 = localStorage.getItem("bagaCaption");
+                    if (saved1) caption1.innerText = saved1;
+                     caption1.addEventListener("input", () =>
+                     {
+                       localStorage.setItem("bagaCaption", caption1.innerText);
+                     });
+                  </script>
+              </div>
+          </div>
+          <div class="fun-fact">
+            <strong>Did you know?</strong>
+            <p>Baga Beach used to be a quiet fishing village before it became one of Goa’s liveliest party spots and tourist favorites!</p>
+          </div>
+        </div>
+      <div class="timeline-entry">
+          <h2 style="font-family: Merriweather; font-size:30px;">Panaji,Goa
+              <span class="date" style="font-family: Merriweather; font-size:15px; ">16 March 2021</span></h2>
+
+          <div class="top-section">
+            <div class="left-section">
+             <img src="./quarter.jpeg" alt="Latin Quarters" class="img-content"  />
+               <div class="highlights">
+                   <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+                  <ul>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Walked through colorful colonial streets</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Took photos near heritage homes</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Sat under a bougainvillaea tree and wrote a journal</li> 
+                  </ul>
+               </div>
+               <div class="gallery">
+                  <img src="./home.jpeg" style="height: 250px; width:150px;" alt="Heritage homes" />
+                  <img src="./tree.jpeg" style="height: 250px; width:150px;" alt="Bougainvillaea trees" />       
+               </div>
+            </div>
+            <div class="right-section">
+                   <div class="map-container">
+                   <h3 class="map-title" style="font-family: Merriweather; font-size:25px; color:black; position: relative; left:15px;">📍 Location Visited</h3>
+                   <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30630.648934693075!2d73.8266267!3d15.4964964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf7f8471c75f3d%3A0x8b65e68e0043c1b0!2sFontainhas%2C%20Panaji%2C%20Goa%20403001!5e0!3m2!1sen!2sin!4v1717587889959!5m2!1sen!2sin"
+                      allowfullscreen=""
+                      loading="lazy"
+                      title="Map of Latin Quarters"
+                      style="height:450px;  width:450px; position:relative; left:20px;"
+                  ></iframe>
+                  </div>
+                  <div class="quote">
+                    <h4 style="font-size: 22px; color: black;  position:relative; left:20px;">"Tucked in the colors of Fontainhas, I found a slower, sweeter world.”</h4>
+                  </div>
+                  <div class="caption-box" style=" margin-bottom: 20px;  position:relative; left:20px; width:420px;">
+                     <label for="romeCaption"><strong>📝 Caption:</strong></label>
+                     <div id="romeCaption" contenteditable="true" class="editable-caption">
+                        Every corner whispered stories, every wall held charm  it felt like walking through a painting!
+                    </div>
+                  </div>
+                  <script>
+                    const caption2 = document.getElementById("PanajiCaption");
+                    const saved2 = localStorage.getItem("PanajiCaption");
+                    if (saved2) caption2.innerText = saved2;
+                     caption2.addEventListener("input", () =>
+                     {
+                         localStorage.setItem("Caption", caption2.innerText);
+                     });
+                  </script>
+             </div>
+        </div>
+        <div class="fun-fact">
+         <strong>Did you know?</strong>
+         <p>Fontainhas is Asia’s only Latin Quarter, and it’s been preserved since the 18th century, still glowing with its Portuguese heritage and pastel-colored charm!</p>
+        </div>
+     </div>
+  <div class="timeline-entry">
+    <h2 style="font-family: Merriweather; font-size:30px;">Palolem,Goa 
+      <span class="date" style="font-family: Merriweather; font-size:15px; ">17 March 2021</span></h2>
+    <div class="top-section">
+      <div class="left-section">
+        <img src="./beach2.jpeg" alt="Butterfly beach" class="img-content" />
+        <div class="highlights">
+          <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+          <ul>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Boat trip to Butterfly beach for dolphin spotting</li>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Lunch at local sea food shack</li>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Cozy dinner at air Resort</li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <img src="./dolphin.jpeg" style="height: 350px; width:150px;" alt="Dolphin spotting" />
+          <img src="./resort.jpeg"  style="height: 350px; width:150px;" alt="Air resort" />
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="map-container">
+          <h3 class="map-title" style="position: relative; left:15px; font-family: Merriweather; font-size:25px; color:black;">📍 Location Visited</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.838731859947!2d73.7411!3d15.5529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfddf5e6b6f6a1%3A0x1b2c1e0a8d8e2c3a!2sPalolem%20Beach!5e0!3m2!1sen!2sin!4v1685897081992!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            title="Map of Palolem"
+             style="height:450px; width:450px; position:relative; left:20px;"
+          ></iframe>
+        </div>
+        <div class="quote">
+          <h4 style="font-size: 22px; color: black; position:relative; left:20px;">"In the hush of Palolem's waves, I heard peace whisper.”</h4>
+       
+        </div>
+        <div class="caption-box" style=" margin-bottom: 20px; position:relative; left:20px; width:415px; ">
+               <label for="veniceCaption"><strong>📝 Caption:</strong></label>
+               <div id="veniceCaption" contenteditable="true" class="editable-caption">
+                    The sun was soft, the sky golden — and for a moment, time stood still!
+               </div>
+         </div>
+         <script>
+             const caption3 = document.getElementById("PalolemCaption");
+             const saved3 = localStorage.getItem("PalolemCaption");
+              if (saved3) caption3.innerText = saved;
+              caption3.addEventListener("input", () =>
+              {
+                    localStorage.setItem("Caption", caption3.innerText);
+              });
+        </script>
+        </div>
+      </div>
+      <div class="fun-fact">
+        <strong>Did you know?</strong>
+        <p>Palolem Beach is one of the cleanest beaches in South Goa calm, crescent-shaped, and naturally peaceful!</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

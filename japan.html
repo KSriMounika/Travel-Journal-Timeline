@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Journal</title>
+   <link rel="stylesheet" href="style1.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <h1 class="title" style="font-family: Libre Baskerville; color:black; font-size:46px;">Travel Journal Timeline</h1>
+      <div class="timeline">
+        <div class="timeline-entry">
+            <h2 style="font-family: Merriweather; font-size:30px;" > Red Torii Gates, JAPAN 
+            <span class="date" style="font-family: Merriweather; font-size:15px; ">23 October 2024</span>
+            </h2>
+
+          <div class="top-section">
+            <div class="left-section">
+              <img src="./gate.jpeg" alt="Red torii gate" class="img-content" />
+              <div class="highlights">
+                <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+                <ul>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Entered through the grand Romon</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Spotted many fox statues(KITSUNE)</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Walked through the famous Senbon Torii</li>
+                </ul>
+              </div>
+              <div class="gallery">
+                <img src="./grand_roman.jpeg" style="height: 200px; width:150px;" alt="Grand romon" />
+                <img src="./fox.jpeg"  style="height: 200px; width:150px;" alt="fox" />
+              </div>
+            </div>
+            <div class="right-section">
+                <div class="map-container">
+                   <h3 class="map-title" style="font-family: Merriweather; font-size:25px; color:black">📍 Location Visited</h3>
+                   <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.5574619722415!2d135.77661267441275!3d34.967698868842355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010f153d2e6d21%3A0x7b1aca1c753ae2e9!2sFushimi%20Inari%20Taisha!5e0!3m2!1sen!2sin!4v1749053160188!5m2!1sen!2sin"
+                          allowfullscreen=""
+                          loading="lazy"
+                          title="Map of Fushimi Inari Taisha"
+                   ></iframe>
+                 </div>
+                  <div class="quote">
+                      <h4 style="font-size: 22px; color: black;">“Every gate you pass is a step into peace, tradition, and the spirit of Japan.”</h4>
+                  </div>
+                  <div class="caption-box">
+                       <label for="gateCaption"><strong>📝Caption:</strong></label>
+                      <div id="gateCaption" contenteditable="true" class="editable-caption">
+                            A journey through thousands of gates, each whispering stories of devotion and history...
+                      </div>
+                  </div>
+                  <script>
+                    const caption1 = document.getElementById("gateCaption");
+                    const saved1 = localStorage.getItem("gateCaption");
+                    if (saved1) caption1.innerText = saved1;
+                     caption1.addEventListener("input", () =>
+                     {
+                       localStorage.setItem("gateCaption", caption1.innerText);
+                     });
+                  </script>
+              </div>
+          </div>
+          <div class="fun-fact">
+            <strong>DO YOU KNOW?</strong>
+            <p>Fushimi Inari Taisha has over 10,000 red torii gates, and each one is donated by a person or business hoping for good luck and success!</p>
+          </div>
+        </div>
+
+
+      <div class="timeline-entry">
+          <h2 style="font-family: Merriweather; font-size:30px;">Arashiyama Monkey Park, Japan
+              <span class="date" style="font-family: Merriweather; font-size:15px; ">24 October 2024</span></h2>
+
+          <div class="top-section">
+            <div class="left-section">
+             <img src="./park.jpeg" alt="Arashiyama monkeypark" class="img-content"  />
+               <div class="highlights">
+                   <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+                  <ul>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Hiked up the forested trail to the monkey park</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Explored nearby Arashiyama sights</li>
+                    <li style="font-family: Merriweather; font-size:20px; color:black">Fed monkeys safely from a special hurt</li> 
+                  </ul>
+               </div>
+               <div class="gallery">
+                  <img src="./monkey.jpeg" style="height: 320px; width:150px;" alt="monkey" />
+                  <img src="./Bamboo.jpeg" style="height: 320px; width:150px;" alt="bamboo" />       
+               </div>
+            </div>
+            <div class="right-section">
+                   <div class="map-container">
+                   <h3 class="map-title" style="font-family: Merriweather; font-size:25px; color:black; position: relative; left:15px;">📍 Location Visited</h3>
+                   <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13071.250547962367!2d135.67662449916142!3d35.011395028550325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600100ab6efb49bd%3A0x1b3493b0430734b2!2sArashiyama%20Monkey%20Park%20Iwatayama!5e0!3m2!1sen!2sin!4v1749053338825!5m2!1sen!2sin"
+                      allowfullscreen=""
+                      loading="lazy"
+                      title="Map of Arashiyama Monkey park"
+                      style="height:550px;  width:450px; position:relative; left:20px;"
+                  ></iframe>
+                  </div>
+                  <div class="quote">
+                    <h4 style="font-size: 22px; color: black;  position:relative; left:20px;">"In the heart of Kyoto, the monkeys roam free"</h4>
+                  </div>
+                  <div class="caption-box" style=" margin-bottom: 20px;  position:relative; left:20px; width:420px;">
+                     <label for="parkCaption"><strong>📝 Caption:</strong></label>
+                     <div id="parkCaption" contenteditable="true" class="editable-caption">
+                         A little hike, a big reward!...
+                    </div>
+                  </div>
+                  <script>
+                    const caption2 = document.getElementById("prakCaption");
+                    const saved2 = localStorage.getItem("prakCaption");
+                    if (saved2) caption2.innerText = saved2;
+                     caption2.addEventListener("input", () =>
+                     {
+                         localStorage.setItem("Caption", caption2.innerText);
+                     });
+                  </script>
+             </div>
+        </div>
+        <div class="fun-fact">
+         <strong>DO YOU KNOW?</strong>
+         <p>Baby Monkeys are usually born in Spring to early summer, and cling adorably to their mothers.</p>
+        </div>
+     </div>
+
+
+  <div class="timeline-entry">
+    <h2 style="font-family: Merriweather; font-size:30px;">Kinkaku-ji(Golden Pavilion Temple), Japan
+      <span class="date" style="font-family: Merriweather; font-size:15px; ">25 October 2024</span></h2>
+    <div class="top-section">
+      <div class="left-section">
+        <img src="./golden.jpeg" alt="Temple" class="img-content" />
+        <div class="highlights">
+          <p style="font-family: Merriweather; font-size:25px; color:black">Day Highlights</p>
+          <ul>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Paused for reflection at the Anmintaku Pond</li>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Fed the Koi Fish in the Pond</li>
+            <li style="font-family: Merriweather; font-size:20px; color:black">Enjoyed matcha tea at the garden</li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <img src="./pond1.jpeg" style="height: 250px; width:150px;" alt="pond" />
+          <img src="./fish1.jpeg"  style="height: 250px; width:150px;" alt="fishpond" />
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="map-container">
+          <h3 class="map-title" style="position: relative; left:15px; font-family: Merriweather; font-size:25px; color:black;">📍 Location Visited</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13066.775711742039!2d135.71078905714188!3d35.03938617203361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a820c0eb46bd%3A0xee4272b1c22645f!2sKinkaku-ji!5e0!3m2!1sen!2sin!4v1749053471786!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            title="Map of Venice"
+             style="height:450px; width:450px; position:relative; left:20px;"
+          ></iframe>
+        </div>
+        <div class="quote">
+          <h4 style="font-size: 22px; color: black; position:relative; left:20px;">“Shining in silence,the Golden Pavilion speaks in peace.”</h4>
+       
+        </div>
+        <div class="caption-box" style=" margin-bottom: 20px; position:relative; left:20px; width:415px; ">
+               <label for="veniceCaption"><strong>📝 Caption:</strong></label>
+               <div id="veniceCaption" contenteditable="true" class="editable-caption">
+                    A Golden treasure hidden in a quiet garden...
+               </div>
+         </div>
+         <script>
+             const caption3 = document.getElementById("kinkakujiCaption");
+             const saved3 = localStorage.getItem("kinkakujiCaption");
+              if (saved3) caption3.innerText = saved;
+              caption3.addEventListener("input", () =>
+              {
+                    localStorage.setItem("kinkakujiCaption", caption3.innerText);
+              });
+        </script>
+        </div>
+      </div>
+      <div class="fun-fact">
+        <strong>Did you know?</strong>
+        <p>The Building was rebuilt in 1955.</p>
+      </div>
+    </div>
+  </div>
+</div
+</body>
+</html>
